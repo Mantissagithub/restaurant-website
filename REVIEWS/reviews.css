@@ -1,0 +1,206 @@
+/* Reset and general styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://media.istockphoto.com/id/1403973419/photo/table-top-of-food-spread-on-table.jpg?s=2048x2048&w=is&k=20&c=huMXHeOEi-72-TuRBbpjQppkbp4ABrW2Cj1Xgofl2Xc=');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%; /* Set width to 100% */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Header styles */
+header {
+    background-color: #1e1d1d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.cart-icon a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cart-icon img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: space-between; /* Position elements apart */
+    align-items: start;
+}
+
+/* Review section styles */
+.reviews-section {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set three equal columns */
+    gap: 20px;
+    justify-items: center;
+    place-content: center;
+    max-width: 50%;
+}
+
+.review {
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F3F4F6; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.review p {
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.6;
+    font-size: 16px; /* Adjust font size */
+}
+
+.customer {
+    margin-top: 15px;
+    font-style: italic;
+    color: #777; /* Slightly darker customer text color */
+}
+
+.reviews-slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set three equal columns */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 50%; /* Set width for the sidebar */
+    margin-top: 40px; /* Adjust top margin */
+    padding: 20px;
+    background-color: #F3F4F6; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    height: 75px;
+}
+
+.sidebar-content {
+    text-align: center;
+}
+
+.sidebar h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color */
+}
+
+.sidebar p {
+    font-size: 16px;
+    color: #555; /* Slightly darker text color */
+    margin-bottom: 10px;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 20px;
+    height: 30%;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #1e1d1d;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    margin-bottom: 12px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
